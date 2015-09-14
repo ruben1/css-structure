@@ -1,0 +1,23 @@
+/* 
+================================
+  CORE NAV
+================================
+*/
+
+.nav {
+
+}
+
+/* 
+========================================
+  HORIZONTAL/VERTICAL NAV SUB-COMPONENT
+========================================
+ */
+
+.nav-inline > * {
+  display: inline-block;
+}
+
+.nav-stacked > * {
+  display: block;
+}
