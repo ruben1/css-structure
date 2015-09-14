@@ -1,0 +1,71 @@
+/* 
+==================================================
+  CORE BUTTON
+==================================================
+*/
+.btn {
+  &:hover {
+
+  }
+}
+
+/* 
+==================================================
+  FORM BUTTON
+=================================================
+*/
+
+.btnForm {
+  // note: extensions should be handled at the html level. Ex: <a class="btn btnForm">Button</a>
+  // @extend .btn; <-- used if extensions are handled at css level
+  font-size: $fontSize;
+  width: 50%; //default value for small devices, for rest of devices will be modified below
+  &:hover {
+
+  }
+  
+
+  /* SMALL DEVICES */
+  @media screen and (min-width: 400px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 800px) {
+    width: 100px;
+  }
+}
+
+// this styles could either overwrite the .btnForm by using .btnForm.btnForm-login
+// or could also just use .btnForm-login if there's no need to overwrite a style from .btnForm
+
+// convention seems to be sub-components like .btnForm-login are standalone
+// state rules are used like .btnForm.is-button-success
+.btnForm-login {
+  &:hover {
+  
+  }  
+}
+.btnForm-signup {
+  &:hover {
+
+  }
+}
+
+/* 
+==============================================
+  STATE RULES FOR BUTTONS
+==============================================
+ */
+
+.btnForm, 
+.btnForm-login,
+.btnForm-signup {
+  &.is-button-success {
+    color: white;
+    background-color: green;
+  }
+  &.is-button-error {
+    color: white;
+    background-color: red;
+  }  
+}
