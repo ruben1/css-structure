@@ -1,6 +1,17 @@
 @import 
+  // variables contain data that is used across all css files
   'variables',
+
+  // mixins contains reusable css
   'mixins',
+
+  // base contains a reset, element rules and typography rules
   'base/index',
+
+  // layout contains the grid and major components of the site: header, main content, sidebar, footer,..
   'layout/index',
-  'components/index'
+
+  // components contains minor components: buttons, menus, lists,..
+  'components/index';
+
+
