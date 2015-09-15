@@ -1,20 +1,20 @@
 @import 
-  // variables contain data that is used across all css files
+  /*  variables contain data that is used across all css files */
   'variables',
 
-  // mixins contains reusable css
+  /* mixins contains reusable css */
   'mixins',
 
-  // base contains a reset, element rules and typography rules
+  /* base contains a reset, element rules and typography rules */
   'base/index',
 
-  // layout contains the grid and other container-level css to position content and that doesn't belong in modules or components
+  /* layout contains the grid and other container-level css to position content and that doesn't belong in modules or components */
   'layout/index',
   
-  // modules contains major components of the site: header, main content, sidebar, footer,..
+  /* modules contains major components of the site: header, main content, sidebar, footer,.. */
   'modules/index',
 
-  // components contains minor components: buttons, menus, lists,..
+  /* components contains minor components: buttons, menus, lists,.. */
   'components/index';
 
 
